@@ -62,6 +62,12 @@
         <item name="android:windowNoTitle">false</item>
         <item name="android:dialogCornerRadius">28dp</item>
         <item name="android:elegantTextHeight">true</item>
+        <!-- The share sheet's dialog is the platform's AlertDialog: the system's rounded surface -->
+        <item name="android:alertDialogTheme">@style/BugleTheme.PlatformAlert</item>
+    </style>
+
+    <style name="BugleTheme.PlatformAlert" parent="@android:style/Theme.DeviceDefault.Dialog.Alert">
+        <item name="android:elegantTextHeight">true</item>
     </style>
 
     <style name="BugleTheme.ConversationListActivity" parent="BugleTheme">
