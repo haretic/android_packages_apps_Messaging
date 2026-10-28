@@ -60,7 +60,6 @@
 
     <style name="BugleTheme.DialogActivity" parent="@style/Theme.MaterialComponents.DayNight.Dialog">
         <item name="android:windowNoTitle">false</item>
-        <item name="android:background">@color/window_background</item>
         <item name="android:dialogCornerRadius">28dp</item>
         <item name="android:elegantTextHeight">true</item>
     </style>
@@ -583,8 +582,8 @@
     </style>
 
     <style name="AlertDialogTheme" parent="@style/ThemeOverlay.AppCompat.Dialog.Alert">
-        <item name="android:background">@color/window_background</item>
         <item name="dialogCornerRadius">28dp</item>
+        <item name="android:dialogCornerRadius">28dp</item>
     </style>
 
     <style name="AppPreferenceThemeOverlay" parent="@style/PreferenceThemeOverlay">
