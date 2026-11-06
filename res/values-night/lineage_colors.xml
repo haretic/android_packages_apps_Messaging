@@ -16,7 +16,8 @@
     limitations under the License.
 -->
 <resources>
-    <color name="lineage_accent">@android:color/system_accent1_100</color>
+    <!-- haretic: the dark theme's accent, the seed itself in the haretic style, as the other apps' -->
+    <color name="lineage_accent">@android:color/system_accent1_200</color>
 
     <color name="window_background">@android:color/system_neutral1_900</color>
 
