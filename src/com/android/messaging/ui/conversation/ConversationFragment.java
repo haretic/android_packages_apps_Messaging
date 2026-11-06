@@ -88,7 +88,6 @@ import com.android.messaging.datamodel.data.ParticipantData;
 import com.android.messaging.datamodel.data.SubscriptionListData.SubscriptionListEntry;
 import com.android.messaging.ui.AttachmentPreview;
 import com.android.messaging.ui.BugleActionBarActivity;
-import com.android.messaging.ui.ConversationDrawables;
 import com.android.messaging.ui.SnackBar;
 import com.android.messaging.ui.UIIntents;
 import com.android.messaging.ui.animation.PopupTransitionAnimation;
@@ -1467,7 +1466,10 @@ public class ConversationFragment extends Fragment implements ConversationDataLi
     }
 
     private void updateActionAndStatusBarColor(final ActionBar actionBar) {
-        final int themeColor = ConversationDrawables.get().getConversationThemeColor();
+        // haretic: the bar as the conversation list's, the same as the theme colour in the light
+        // theme, black with the dark one rather than the bubbles' dark accent
+        final int themeColor = getResources().getColor(R.color.action_bar_background_color,
+                getActivity().getTheme());
         actionBar.setBackgroundDrawable(new ColorDrawable(themeColor));
         UiUtils.setStatusBarColor(getActivity(), themeColor);
     }

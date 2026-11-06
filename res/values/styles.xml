@@ -427,8 +427,10 @@
         <item name="android:layout_marginStart">4dp</item>
     </style>
 
+    <!-- haretic: the accent, the action bar's colour only in the light theme, so the compose
+         field's cursor keeps showing with the dark theme's black bar -->
     <style name="ColorAccentBlueOverrideStyle">
-        <item name="colorAccent">@color/action_bar_background_color</item>
+        <item name="colorAccent">@color/lineage_accent</item>
     </style>
 
     <style name="ColorAccentGrayOverrideStyle">
